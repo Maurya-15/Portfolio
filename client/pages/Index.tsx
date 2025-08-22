@@ -323,9 +323,6 @@ export default function Index() {
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent"></div>
-                  <div className="absolute top-4 left-4 px-3 py-1 bg-primary/90 text-primary-foreground text-xs font-bold rounded-full">
-                    CERTIFIED
-                  </div>
                 </div>
 
                 <div className="space-y-3">
@@ -336,7 +333,7 @@ export default function Index() {
                   </p>
                   <div className="flex items-center justify-between pt-2">
                     <span className="text-sm text-muted-foreground">Apna College</span>
-                    <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs font-medium rounded-full">
+                    <span className="text-sm text-muted-foreground">
                       Completed
                     </span>
                   </div>
@@ -354,9 +351,6 @@ export default function Index() {
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent"></div>
-                  <div className="absolute top-4 left-4 px-3 py-1 bg-yellow-500/90 text-black text-xs font-bold rounded-full">
-                    VERIFIED
-                  </div>
                 </div>
 
                 <div className="space-y-3">
@@ -367,7 +361,7 @@ export default function Index() {
                   </p>
                   <div className="flex items-center justify-between pt-2">
                     <span className="text-sm text-muted-foreground">Online Platform</span>
-                    <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs font-medium rounded-full">
+                    <span className="text-sm text-muted-foreground">
                       Certified
                     </span>
                   </div>
@@ -385,9 +379,6 @@ export default function Index() {
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent"></div>
-                  <div className="absolute top-4 left-4 px-3 py-1 bg-blue-500/90 text-white text-xs font-bold rounded-full">
-                    CERTIFIED
-                  </div>
                 </div>
 
                 <div className="space-y-3">
@@ -398,7 +389,7 @@ export default function Index() {
                   </p>
                   <div className="flex items-center justify-between pt-2">
                     <span className="text-sm text-muted-foreground">Tech Academy</span>
-                    <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs font-medium rounded-full">
+                    <span className="text-sm text-muted-foreground">
                       Verified
                     </span>
                   </div>
