@@ -69,5 +69,71 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-md bg-background/30 border border-white/10;
+  }
+
+  .typing-cursor::after {
+    content: '|';
+    @apply animate-pulse text-primary;
+  }
+
+  .project-card {
+    @apply group relative overflow-hidden rounded-xl bg-card border border-border/50 transition-all duration-300 hover:scale-105 hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/10;
+  }
+
+  .skill-pill {
+    @apply px-4 py-2 rounded-full bg-secondary text-secondary-foreground border border-border/30 transition-all duration-300 hover:bg-primary/10 hover:border-primary/50 hover:scale-105;
+  }
+
+  .nav-blur {
+    @apply backdrop-blur-md bg-background/80 border-b border-border/50;
+  }
+
+  .fade-in {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
 }
