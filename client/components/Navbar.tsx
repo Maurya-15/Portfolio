@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { Menu, X, Github, Linkedin, Mail } from "lucide-react";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -10,49 +10,47 @@ export default function Navbar() {
       setIsScrolled(window.scrollY > 20);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#about', label: 'About' },
-    { href: '#skills', label: 'Skills' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#contact', label: 'Contact' },
+    { href: "#home", label: "Home" },
+    { href: "#about", label: "About" },
+    { href: "#skills", label: "Skills" },
+    { href: "#projects", label: "Projects" },
+    { href: "#contact", label: "Contact" },
   ];
 
   const socialLinks = [
-    { 
-      href: 'https://github.com/Maurya-15', 
-      icon: Github, 
-      label: 'GitHub' 
+    {
+      href: "https://github.com/Maurya-15",
+      icon: Github,
+      label: "GitHub",
     },
-    { 
-      href: 'https://www.linkedin.com/in/maurya-doshi-79073227a/', 
-      icon: Linkedin, 
-      label: 'LinkedIn' 
+    {
+      href: "https://www.linkedin.com/in/maurya-doshi-79073227a/",
+      icon: Linkedin,
+      label: "LinkedIn",
     },
-    { 
-      href: 'mailto:mauryadoshi1@gmail.com', 
-      icon: Mail, 
-      label: 'Email' 
+    {
+      href: "mailto:mauryadoshi1@gmail.com",
+      icon: Mail,
+      label: "Email",
     },
   ];
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'nav-blur shadow-lg shadow-primary/5'
-          : 'bg-transparent'
+        isScrolled ? "nav-blur shadow-lg shadow-primary/5" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a 
-            href="#home" 
+          <a
+            href="#home"
             className="text-2xl font-bold gradient-text hover:scale-105 transition-transform duration-300"
           >
             Maurya Doshi
@@ -115,7 +113,7 @@ export default function Navbar() {
                     {link.label}
                   </a>
                 ))}
-                
+
                 {/* Mobile Social Links */}
                 <div className="flex items-center space-x-4 pt-4 border-t border-border/30">
                   {socialLinks.map((social) => {
