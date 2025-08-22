@@ -104,8 +104,8 @@ export default function Index() {
       <Navbar />
       
       {/* Hero Section */}
-      <section 
-        id="home" 
+      <section
+        id="home"
         data-section
         className={`min-h-screen flex items-center justify-center relative overflow-hidden ${
           visibleSections.includes('home') ? 'fade-in' : ''
@@ -118,48 +118,50 @@ export default function Index() {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-128 h-128 bg-purple-dark/5 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="container mx-auto px-4 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow">
-            Hi, I'm <span className="gradient-text">Maurya Doshi</span>
-          </h1>
-          
-          <div className="text-2xl md:text-4xl mb-8 h-16 flex items-center justify-center">
-            <TypingEffect 
-              texts={[
-                'Aspiring Full-Stack Developer',
-                'React.js Enthusiast',
-                'Problem Solver',
-                'Tech Innovator'
-              ]}
-              className="gradient-text font-semibold"
-            />
+        <div className="container mx-auto px-4 lg:px-8 text-center flex flex-col justify-center min-h-screen">
+          <div className="space-y-8">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-shadow">
+              Hi, I'm <span className="gradient-text">Maurya Doshi</span>
+            </h1>
+
+            <div className="text-2xl md:text-4xl lg:text-5xl h-16 md:h-20 flex items-center justify-center">
+              <TypingEffect
+                texts={[
+                  'Aspiring Full-Stack Developer',
+                  'React.js Enthusiast',
+                  'Problem Solver',
+                  'Tech Innovator'
+                ]}
+                className="gradient-text font-semibold"
+              />
+            </div>
+
+            <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              Full-stack developer skilled in building responsive web apps using React, Node.js, Express, and MongoDB.
+              Experienced in authentication, database integration, and deployment. Passionate about delivering clean,
+              scalable code with intuitive UI/UX.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-6 justify-center pt-8">
+              <a
+                href="https://cdn.builder.io/o/assets%2F6302eed1ff854c46b4222e42af8b3ed4%2F8880045b83d84214bbed1f5e9de498bc?alt=media&token=27664d51-b78f-4fa8-a743-96258a0cb284&apiKey=6302eed1ff854c46b4222e42af8b3ed4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-10 py-4 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-full font-semibold hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl text-lg"
+              >
+                Resume
+              </a>
+              <a
+                href="#contact"
+                className="px-10 py-4 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-full font-semibold transition-all duration-300 text-lg"
+              >
+                Get In Touch
+              </a>
+            </div>
           </div>
 
-          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-            Full-stack developer skilled in building responsive web apps using React, Node.js, Express, and MongoDB. 
-            Experienced in authentication, database integration, and deployment. Passionate about delivering clean, 
-            scalable code with intuitive UI/UX.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <a
-              href="https://cdn.builder.io/o/assets%2F6302eed1ff854c46b4222e42af8b3ed4%2F8880045b83d84214bbed1f5e9de498bc?alt=media&token=27664d51-b78f-4fa8-a743-96258a0cb284&apiKey=6302eed1ff854c46b4222e42af8b3ed4"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-3 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-full font-semibold hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl"
-            >
-              Resume
-            </a>
-            <a 
-              href="#contact"
-              className="px-8 py-3 border border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-full font-semibold transition-all duration-300"
-            >
-              Get In Touch
-            </a>
-          </div>
-
-          <div className="animate-bounce">
-            <ChevronDown size={32} className="mx-auto text-muted-foreground" />
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <ChevronDown size={32} className="text-muted-foreground" />
           </div>
         </div>
       </section>
