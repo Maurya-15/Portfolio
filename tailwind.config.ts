@@ -61,6 +61,10 @@ export default {
           DEFAULT: "hsl(var(--surface))",
           hover: "hsl(var(--surface-hover))",
         },
+        purple: {
+          light: "hsl(var(--purple-light))",
+          dark: "hsl(var(--purple-dark))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
