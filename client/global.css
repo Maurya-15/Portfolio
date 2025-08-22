@@ -9,42 +9,44 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    /* Dark Portfolio Theme */
-    --background: 220 13% 8%;
-    --foreground: 220 6% 92%;
+    /* Black and Purple Portfolio Theme */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 95%;
 
-    --card: 220 13% 10%;
-    --card-foreground: 220 6% 92%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 220 13% 10%;
-    --popover-foreground: 220 6% 92%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 270 95% 65%;
-    --primary-foreground: 220 13% 8%;
+    --primary: 270 100% 70%;
+    --primary-foreground: 0 0% 0%;
 
-    --secondary: 220 13% 15%;
-    --secondary-foreground: 220 6% 92%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 220 13% 15%;
-    --muted-foreground: 220 6% 65%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 195 100% 50%;
-    --accent-foreground: 220 13% 8%;
+    --accent: 285 100% 80%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 220 6% 92%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 220 13% 20%;
-    --input: 220 13% 15%;
-    --ring: 270 95% 65%;
+    --border: 0 0% 15%;
+    --input: 0 0% 10%;
+    --ring: 270 100% 70%;
 
     --radius: 0.75rem;
 
     /* Portfolio specific colors */
-    --gradient-start: 270 95% 65%;
-    --gradient-end: 195 100% 50%;
-    --surface: 220 13% 12%;
-    --surface-hover: 220 13% 18%;
+    --gradient-start: 270 100% 70%;
+    --gradient-end: 285 100% 80%;
+    --surface: 0 0% 7%;
+    --surface-hover: 0 0% 12%;
+    --purple-light: 270 100% 85%;
+    --purple-dark: 270 100% 50%;
   }
 
   .light {
