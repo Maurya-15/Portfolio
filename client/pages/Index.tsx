@@ -224,60 +224,56 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="glass-effect rounded-2xl p-6">
-              <div className="flex items-center gap-3 mb-4">
-                <Globe className="text-primary" size={24} />
-                <h3 className="text-xl font-semibold">Frontend</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.frontend.map((skill) => (
-                  <span key={skill} className="skill-pill text-sm">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-8">
+              {/* Programming Languages */}
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl font-semibold mb-4 text-primary">Programming Languages</h3>
+                  <div className="flex flex-wrap gap-3">
+                    {skills.programmingLanguages.map((skill) => (
+                      <span key={skill} className="px-4 py-2 bg-surface border border-purple-dark/30 rounded-lg text-sm font-medium hover:bg-purple-dark/20 hover:border-primary transition-all duration-300">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
 
-            <div className="glass-effect rounded-2xl p-6">
-              <div className="flex items-center gap-3 mb-4">
-                <Server className="text-accent" size={24} />
-                <h3 className="text-xl font-semibold">Backend</h3>
+                <div>
+                  <h3 className="text-xl font-semibold mb-4 text-primary">Tools & Technologies</h3>
+                  <div className="flex flex-wrap gap-3">
+                    {skills.toolsAndTechnologies.map((skill) => (
+                      <span key={skill} className="px-4 py-2 bg-surface border border-purple-dark/30 rounded-lg text-sm font-medium hover:bg-purple-dark/20 hover:border-primary transition-all duration-300">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.backend.map((skill) => (
-                  <span key={skill} className="skill-pill text-sm">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
 
-            <div className="glass-effect rounded-2xl p-6">
-              <div className="flex items-center gap-3 mb-4">
-                <Database className="text-primary" size={24} />
-                <h3 className="text-xl font-semibold">Database</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.database.map((skill) => (
-                  <span key={skill} className="skill-pill text-sm">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
+              {/* Frameworks & Libraries */}
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl font-semibold mb-4 text-primary">Frameworks & Libraries</h3>
+                  <div className="flex flex-wrap gap-3">
+                    {skills.frameworksAndLibraries.map((skill) => (
+                      <span key={skill} className="px-4 py-2 bg-surface border border-purple-dark/30 rounded-lg text-sm font-medium hover:bg-purple-dark/20 hover:border-primary transition-all duration-300">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
 
-            <div className="glass-effect rounded-2xl p-6">
-              <div className="flex items-center gap-3 mb-4">
-                <Code2 className="text-accent" size={24} />
-                <h3 className="text-xl font-semibold">Tools</h3>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                {skills.tools.map((skill) => (
-                  <span key={skill} className="skill-pill text-sm">
-                    {skill}
-                  </span>
-                ))}
+                <div>
+                  <h3 className="text-xl font-semibold mb-4 text-primary">Other Skills</h3>
+                  <div className="flex flex-wrap gap-3">
+                    {skills.otherSkills.map((skill) => (
+                      <span key={skill} className="px-4 py-2 bg-surface border border-purple-dark/30 rounded-lg text-sm font-medium hover:bg-purple-dark/20 hover:border-primary transition-all duration-300">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
