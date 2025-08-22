@@ -294,53 +294,80 @@ export default function Index() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="space-y-8">
             {projects.map((project, index) => (
-              <div 
+              <div
                 key={project.title}
-                className={`project-card p-6 ${project.featured ? 'lg:col-span-2' : ''}`}
+                className="group relative bg-gradient-to-br from-surface via-surface to-surface/80 rounded-2xl p-8 border border-purple-dark/20 hover:border-primary/40 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-2"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className={`${project.featured ? 'md:flex gap-8' : ''}`}>
-                  <div className={`${project.featured ? 'md:w-1/2' : ''}`}>
-                    <div className="relative overflow-hidden rounded-lg mb-4 bg-surface/50 h-48">
-                      <img 
-                        src={project.image} 
+                {/* Gradient Background Effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-accent/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                <div className="relative z-10 grid lg:grid-cols-3 gap-8 items-center">
+                  {/* Project Image */}
+                  <div className="lg:col-span-1">
+                    <div className="relative overflow-hidden rounded-xl bg-purple-dark/10 h-48 lg:h-56 group-hover:scale-105 transition-transform duration-500">
+                      <img
+                        src={project.image}
                         alt={project.title}
-                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                        className="w-full h-full object-cover"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent"></div>
+
+                      {/* Floating Project Number */}
+                      <div className="absolute top-4 left-4 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg">
+                        {index + 1}
+                      </div>
                     </div>
                   </div>
-                  
-                  <div className={`${project.featured ? 'md:w-1/2' : ''}`}>
-                    <h3 className="text-2xl font-bold mb-3 gradient-text">{project.title}</h3>
-                    <p className="text-muted-foreground mb-4 leading-relaxed">{project.description}</p>
-                    
-                    <div className="flex flex-wrap gap-2 mb-6">
-                      {project.tech.map((tech) => (
-                        <span key={tech} className="skill-pill text-xs">
-                          {tech}
-                        </span>
-                      ))}
+
+                  {/* Project Content */}
+                  <div className="lg:col-span-2 space-y-6">
+                    <div>
+                      <div className="flex items-center gap-3 mb-3">
+                        <h3 className="text-3xl font-bold gradient-text">{project.title}</h3>
+                        {project.featured && (
+                          <span className="px-3 py-1 bg-primary/20 text-primary text-xs font-semibold rounded-full border border-primary/30">
+                            Featured
+                          </span>
+                        )}
+                      </div>
+                      <p className="text-muted-foreground text-lg leading-relaxed">{project.description}</p>
                     </div>
 
-                    <div className="flex gap-4">
-                      <a 
+                    {/* Tech Stack with Icons */}
+                    <div>
+                      <h4 className="text-sm font-semibold text-primary mb-3 uppercase tracking-wide">Tech Stack</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {project.tech.map((tech) => (
+                          <span
+                            key={tech}
+                            className="px-3 py-1.5 bg-purple-dark/10 text-foreground text-sm font-medium rounded-lg border border-purple-dark/30 hover:bg-primary/20 hover:border-primary/50 hover:scale-105 transition-all duration-300"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Action Buttons */}
+                    <div className="flex gap-4 pt-2">
+                      <a
                         href={project.demo}
-                        className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors duration-300"
+                        className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-xl font-semibold hover:scale-105 hover:shadow-lg hover:shadow-primary/25 transition-all duration-300"
                       >
-                        <Eye size={16} />
+                        <Eye size={18} />
                         Live Demo
                       </a>
-                      <a 
+                      <a
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 border border-border hover:bg-surface-hover rounded-lg transition-colors duration-300"
+                        className="flex items-center gap-2 px-6 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-xl font-semibold transition-all duration-300"
                       >
-                        <Github size={16} />
-                        Code
+                        <Github size={18} />
+                        View Code
                       </a>
                     </div>
                   </div>
