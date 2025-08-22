@@ -47,42 +47,55 @@ export default function Index() {
     otherSkills: ['Problem Solving', 'Data Structures', 'Algorithms', 'UI/UX', 'Responsive Design', 'REST APIs']
   };
 
-  const projects = [
+  const mainProjects = [
     {
       title: 'Freelance Hub',
-      description: 'A comprehensive freelance marketplace platform with job posting, proposals, and instant order placement. Built analytics dashboards for clients and freelancers, plus an admin panel for managing users, orders, and gigs.',
+      subtitle: 'Freelance Marketplace Platform',
+      description: 'A comprehensive Fiverr-like platform with job posting, proposals, gig creation, and instant order placement. Built analytics dashboards for clients and freelancers, plus an admin panel for managing users, orders, and gigs.',
       tech: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB', 'JWT Authentication'],
       image: '/placeholder.svg',
       demo: '#',
       github: 'https://github.com/Maurya-15',
-      featured: true
+      status: 'Live',
+      type: 'Web Application',
+      icon: '💼'
     },
     {
-      title: 'Skiply - Smart Queue Booking',
+      title: 'Skiply',
+      subtitle: 'Smart Queue Booking Web',
       description: 'Real-time queue booking system for hospitals, banks, and businesses with role-based access, live status tracking, booking calendar, and business analytics dashboard.',
       tech: ['React', 'TypeScript', 'Tailwind CSS', 'ShadCN/UI', 'Framer Motion', 'Node.js', 'MongoDB'],
       image: '/placeholder.svg',
       demo: '#',
       github: 'https://github.com/Maurya-15',
-      featured: true
-    },
+      status: 'Live',
+      type: 'Web Application',
+      icon: '📱'
+    }
+  ];
+
+  const otherProjects = [
     {
       title: 'Desktop Assistant',
+      subtitle: 'Speech Recognition Automation Tool',
       description: 'Voice-controlled assistant for web searches, opening apps, and automating system tasks with hands-free interaction.',
       tech: ['Python', 'SpeechRecognition', 'PyAudio', 'Pyttsx3', 'Webbrowser', 'OS'],
-      image: '/placeholder.svg',
       demo: '#',
       github: 'https://github.com/Maurya-15',
-      featured: false
+      status: 'Completed',
+      type: 'Desktop App',
+      icon: '🎤'
     },
     {
       title: 'Cricket Champion',
+      subtitle: 'Fantasy Cricket Team Generator',
       description: 'ML model for player performance prediction, fantasy team generation, and player/team comparison with explainable AI insights.',
       tech: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'Streamlit', 'Generative AI'],
-      image: '/placeholder.svg',
       demo: '#',
       github: 'https://github.com/Maurya-15',
-      featured: false
+      status: 'Completed',
+      type: 'ML Project',
+      icon: '🏏'
     }
   ];
 
