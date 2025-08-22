@@ -296,6 +296,125 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Certifications Section */}
+      <section
+        id="certifications"
+        data-section
+        className={`py-20 ${visibleSections.includes('certifications') ? 'fade-in' : ''}`}
+      >
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">Certifications</h2>
+            <p className="text-muted-foreground text-lg">
+              Professional certifications and completed courses
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Delta 6.0 Certificate */}
+            <div className="group bg-surface border border-purple-dark/20 rounded-2xl p-6 hover:border-primary/40 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2">
+              <div className="space-y-6">
+                <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-purple-dark/10 to-surface/50 h-48">
+                  <img
+                    src="/placeholder.svg"
+                    alt="Delta 6.0 Full Stack Web Development Certificate"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent"></div>
+                  <div className="absolute top-4 left-4 px-3 py-1 bg-primary/90 text-primary-foreground text-xs font-bold rounded-full">
+                    CERTIFIED
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <h3 className="text-xl font-bold gradient-text">Delta 6.0</h3>
+                  <p className="text-primary/80 font-medium">Full Stack Web Development</p>
+                  <p className="text-muted-foreground text-sm">
+                    Comprehensive program covering frontend and backend technologies, including React, Node.js, Express, MongoDB, and deployment.
+                  </p>
+                  <div className="flex items-center justify-between pt-2">
+                    <span className="text-sm text-muted-foreground">Apna College</span>
+                    <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs font-medium rounded-full">
+                      Completed
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* JavaScript Certificate Placeholder */}
+            <div className="group bg-surface border border-purple-dark/20 rounded-2xl p-6 hover:border-primary/40 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2">
+              <div className="space-y-6">
+                <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-purple-dark/10 to-surface/50 h-48">
+                  <img
+                    src="/placeholder.svg"
+                    alt="JavaScript Certification"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent"></div>
+                  <div className="absolute top-4 left-4 px-3 py-1 bg-yellow-500/90 text-black text-xs font-bold rounded-full">
+                    VERIFIED
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <h3 className="text-xl font-bold gradient-text">JavaScript Mastery</h3>
+                  <p className="text-primary/80 font-medium">Advanced JavaScript Concepts</p>
+                  <p className="text-muted-foreground text-sm">
+                    Deep dive into ES6+, async programming, DOM manipulation, and modern JavaScript frameworks.
+                  </p>
+                  <div className="flex items-center justify-between pt-2">
+                    <span className="text-sm text-muted-foreground">Online Platform</span>
+                    <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs font-medium rounded-full">
+                      Certified
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* React Certificate Placeholder */}
+            <div className="group bg-surface border border-purple-dark/20 rounded-2xl p-6 hover:border-primary/40 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2">
+              <div className="space-y-6">
+                <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-purple-dark/10 to-surface/50 h-48">
+                  <img
+                    src="/placeholder.svg"
+                    alt="React Development Certificate"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent"></div>
+                  <div className="absolute top-4 left-4 px-3 py-1 bg-blue-500/90 text-white text-xs font-bold rounded-full">
+                    CERTIFIED
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <h3 className="text-xl font-bold gradient-text">React Development</h3>
+                  <p className="text-primary/80 font-medium">Modern React & Redux</p>
+                  <p className="text-muted-foreground text-sm">
+                    Comprehensive React course covering hooks, context, state management, and building scalable applications.
+                  </p>
+                  <div className="flex items-center justify-between pt-2">
+                    <span className="text-sm text-muted-foreground">Tech Academy</span>
+                    <span className="px-2 py-1 bg-green-500/20 text-green-400 text-xs font-medium rounded-full">
+                      Verified
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Additional Credentials */}
+          <div className="mt-12 text-center">
+            <div className="inline-flex items-center gap-2 px-6 py-3 bg-surface border border-purple-dark/30 rounded-full">
+              <Award className="text-primary" size={20} />
+              <span className="text-foreground font-medium">Currently pursuing additional certifications in Cloud Computing & DevOps</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Main Projects Section */}
       <section
         id="projects"
