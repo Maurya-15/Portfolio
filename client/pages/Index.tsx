@@ -51,14 +51,12 @@ export default function Index() {
       "C++",
     ],
     frameworksAndLibraries: [
-      "React",
+      "React.js",
       "Node.js",
       "Express",
       "Django",
-      "jQuery",
-      "Nextjs",
       "TensorFlow",
-      "Flask",
+      
     ],
     toolsAndTechnologies: [
       "Git",
@@ -71,11 +69,13 @@ export default function Index() {
     ],
     otherSkills: [
       "Problem Solving",
-      "Data Structures",
-      "Algorithms",
+      "MongoDB",
+      "MySQL",
+      "Tailwind CSS",
       "UI/UX",
       "Responsive Design",
       "REST APIs",
+      "Postman"
     ],
   };
 
@@ -91,15 +91,17 @@ export default function Index() {
         "Tailwind CSS",
         "Node.js",
         "Express",
-        "MongoDB",
+        "MongoDB Atlas",
         "JWT Authentication",
+        "Socket.io",
+        
       ],
-      image: "/placeholder.svg",
+      image: "/f.png",
       demo: "#",
-      github: "https://github.com/Maurya-15",
+      github: "https://github.com/Maurya-15/FreelanceHub",
       status: "Live",
       type: "Web Application",
-      icon: "💼",
+ 
     },
     {
       title: "Skiply",
@@ -113,18 +115,40 @@ export default function Index() {
         "ShadCN/UI",
         "Framer Motion",
         "Node.js",
-        "MongoDB",
+        "MongoDB Atlas",
+        "Express",
+        
       ],
-      image: "/placeholder.svg",
-      demo: "#",
-      github: "https://github.com/Maurya-15",
+      image: "/s.png",
+      demo: "https://skiply.vercel.app",
+      github: "https://github.com/Maurya-15/Skiplyy",
       status: "Live",
       type: "Web Application",
-      icon: "📱",
+
     },
   ];
 
   const otherProjects = [
+    {
+      title: "Outfit Generator",
+      subtitle: "AI-Powered Fashion Recommender",
+      description:
+        "A Python machine learning project that generates matching outfits by training an ML model on fashion datasets.",
+      tech: [
+        "Python",
+        "Machine Learning",
+        "Scikit-learn",
+        "Pandas",
+        "NumPy",
+        "React.js",
+        "XG Boost",
+      ],
+      demo: "#",
+      github: "https://github.com/Maurya-15/Outfit-Generator",
+      status: "Completed",
+      type: "ML Project",
+      icon: "👕",
+    },
     {
       title: "Desktop Assistant",
       subtitle: "Speech Recognition Automation Tool",
@@ -139,7 +163,7 @@ export default function Index() {
         "OS",
       ],
       demo: "#",
-      github: "https://github.com/Maurya-15",
+      github: "https://github.com/Maurya-15/Desktop-Assistant",
       status: "Completed",
       type: "Desktop App",
       icon: "🎤",
@@ -159,7 +183,7 @@ export default function Index() {
         "Generative AI",
       ],
       demo: "#",
-      github: "https://github.com/Maurya-15",
+      github: "https://github.com/Maurya-15/Cricket-Team-Reccomender",
       status: "Completed",
       type: "ML Project",
       icon: "🏏",
@@ -311,233 +335,229 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Skills Section */}
-      <section
-        id="skills"
-        data-section
-        className={`py-20 bg-surface ${visibleSections.includes("skills") ? "fade-in" : ""}`}
-      >
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
-              Skills
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              Technologies and tools I work with
-            </p>
-          </div>
+     {/* Skills Section */}
+<section
+  id="skills"
+  data-section
+  className={`py-20 bg-surface ${visibleSections.includes("skills") ? "fade-in" : ""}`}
+>
+  <div className="container mx-auto px-4 lg:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+        Skills
+      </h2>
+      <p className="text-muted-foreground text-lg">
+        Technologies and tools I work with
+      </p>
+    </div>
 
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-8">
-              {/* Programming Languages */}
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold mb-4 text-primary">
-                    Programming Languages
-                  </h3>
-                  <div className="flex flex-wrap gap-3">
-                    {skills.programmingLanguages.map((skill) => (
-                      <span
-                        key={skill}
-                        className="px-4 py-2 bg-surface border border-purple-dark/30 rounded-lg text-sm font-medium hover:bg-purple-dark/20 hover:border-primary transition-all duration-300"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-semibold mb-4 text-primary">
-                    Tools & Technologies
-                  </h3>
-                  <div className="flex flex-wrap gap-3">
-                    {skills.toolsAndTechnologies.map((skill) => (
-                      <span
-                        key={skill}
-                        className="px-4 py-2 bg-surface border border-purple-dark/30 rounded-lg text-sm font-medium hover:bg-purple-dark/20 hover:border-primary transition-all duration-300"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Frameworks & Libraries */}
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold mb-4 text-primary">
-                    Frameworks & Libraries
-                  </h3>
-                  <div className="flex flex-wrap gap-3">
-                    {skills.frameworksAndLibraries.map((skill) => (
-                      <span
-                        key={skill}
-                        className="px-4 py-2 bg-surface border border-purple-dark/30 rounded-lg text-sm font-medium hover:bg-purple-dark/20 hover:border-primary transition-all duration-300"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-semibold mb-4 text-primary">
-                    Other Skills
-                  </h3>
-                  <div className="flex flex-wrap gap-3">
-                    {skills.otherSkills.map((skill) => (
-                      <span
-                        key={skill}
-                        className="px-4 py-2 bg-surface border border-purple-dark/30 rounded-lg text-sm font-medium hover:bg-purple-dark/20 hover:border-primary transition-all duration-300"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div className="max-w-6xl mx-auto">
+      {/* REFACTORED: Changed to a direct 2x2 grid for better alignment */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+        
+        {/* Programming Languages */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4 text-primary">
+            Programming Languages
+          </h3>
+          <div className="flex flex-wrap gap-3">
+            {skills.programmingLanguages.map((skill) => (
+              <span
+                key={skill}
+                className="px-4 py-2 bg-surface border border-purple-dark/30 rounded-lg text-sm font-medium hover:bg-purple-dark/20 hover:border-primary transition-all duration-300"
+              >
+                {skill}
+              </span>
+            ))}
           </div>
         </div>
-      </section>
 
+        {/* Frameworks & Libraries */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4 text-primary">
+            Frameworks & Libraries
+          </h3>
+          <div className="flex flex-wrap gap-3">
+            {skills.frameworksAndLibraries.map((skill) => (
+              <span
+                key={skill}
+                className="px-4 py-2 bg-surface border border-purple-dark/30 rounded-lg text-sm font-medium hover:bg-purple-dark/20 hover:border-primary transition-all duration-300"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Tools & Technologies */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4 text-primary">
+            Tools & Technologies
+          </h3>
+          <div className="flex flex-wrap gap-3">
+            {skills.toolsAndTechnologies.map((skill) => (
+              <span
+                key={skill}
+                className="px-4 py-2 bg-surface border border-purple-dark/30 rounded-lg text-sm font-medium hover:bg-purple-dark/20 hover:border-primary transition-all duration-300"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Other Skills */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4 text-primary">
+            Other Skills
+          </h3>
+          <div className="flex flex-wrap gap-3">
+            {skills.otherSkills.map((skill) => (
+              <span
+                key={skill}
+                className="px-4 py-2 bg-surface border border-purple-dark/30 rounded-lg text-sm font-medium hover:bg-purple-dark/20 hover:border-primary transition-all duration-300"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
       {/* Certifications Section */}
       <section
-        id="certifications"
-        data-section
-        className={`py-20 ${visibleSections.includes("certifications") ? "fade-in" : ""}`}
-      >
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
-              Certifications
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              Professional certifications and completed courses
+  id="certifications"
+  data-section
+  className={`py-20 ${visibleSections.includes("certifications") ? "fade-in" : ""}`}
+>
+  <div className="container mx-auto px-4 lg:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+        Certifications
+      </h2>
+      <p className="text-muted-foreground text-lg">
+        Professional certifications and completed courses
+      </p>
+    </div>
+
+    {/* The justify-center class is added here */}
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+      
+      {/* Delta 6.0 Certificate */}
+      <div className="group bg-surface border border-purple-dark/20 rounded-2xl p-6 hover:border-primary/40 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2">
+        <div className="space-y-6">
+          <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-purple-dark/10 to-surface/50 h-48">
+            {/* Image is now wrapped in an <a> tag */}
+            <a href="/delta.png" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/delta.png"
+                alt="Delta 6.0 Full Stack Web Development Certificate"
+                className="w-full h-full object-cover"
+              />
+            </a>
+            <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent"></div>
+          </div>
+          <div className="space-y-3">
+            <h3 className="text-xl font-bold gradient-text">Delta 6.0</h3>
+            <p className="text-primary/80 font-medium">
+              Full Stack Web Development
             </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Delta 6.0 Certificate */}
-            <div className="group bg-surface border border-purple-dark/20 rounded-2xl p-6 hover:border-primary/40 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2">
-              <div className="space-y-6">
-                <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-purple-dark/10 to-surface/50 h-48">
-                  <img
-                    src="/placeholder.svg"
-                    alt="Delta 6.0 Full Stack Web Development Certificate"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent"></div>
-                </div>
-
-                <div className="space-y-3">
-                  <h3 className="text-xl font-bold gradient-text">Delta 6.0</h3>
-                  <p className="text-primary/80 font-medium">
-                    Full Stack Web Development
-                  </p>
-                  <p className="text-muted-foreground text-sm">
-                    Comprehensive program covering frontend and backend
-                    technologies, including React, Node.js, Express, MongoDB,
-                    and deployment.
-                  </p>
-                  <div className="flex items-center justify-between pt-2">
-                    <span className="text-sm text-muted-foreground">
-                      Apna College
-                    </span>
-                    <span className="text-sm text-muted-foreground">
-                      Completed
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* JavaScript Certificate Placeholder */}
-            <div className="group bg-surface border border-purple-dark/20 rounded-2xl p-6 hover:border-primary/40 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2">
-              <div className="space-y-6">
-                <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-purple-dark/10 to-surface/50 h-48">
-                  <img
-                    src="/placeholder.svg"
-                    alt="JavaScript Certification"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent"></div>
-                </div>
-
-                <div className="space-y-3">
-                  <h3 className="text-xl font-bold gradient-text">
-                    JavaScript Mastery
-                  </h3>
-                  <p className="text-primary/80 font-medium">
-                    Advanced JavaScript Concepts
-                  </p>
-                  <p className="text-muted-foreground text-sm">
-                    Deep dive into ES6+, async programming, DOM manipulation,
-                    and modern JavaScript frameworks.
-                  </p>
-                  <div className="flex items-center justify-between pt-2">
-                    <span className="text-sm text-muted-foreground">
-                      Online Platform
-                    </span>
-                    <span className="text-sm text-muted-foreground">
-                      Certified
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* React Certificate Placeholder */}
-            <div className="group bg-surface border border-purple-dark/20 rounded-2xl p-6 hover:border-primary/40 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2">
-              <div className="space-y-6">
-                <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-purple-dark/10 to-surface/50 h-48">
-                  <img
-                    src="/placeholder.svg"
-                    alt="React Development Certificate"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent"></div>
-                </div>
-
-                <div className="space-y-3">
-                  <h3 className="text-xl font-bold gradient-text">
-                    React Development
-                  </h3>
-                  <p className="text-primary/80 font-medium">
-                    Modern React & Redux
-                  </p>
-                  <p className="text-muted-foreground text-sm">
-                    Comprehensive React course covering hooks, context, state
-                    management, and building scalable applications.
-                  </p>
-                  <div className="flex items-center justify-between pt-2">
-                    <span className="text-sm text-muted-foreground">
-                      Tech Academy
-                    </span>
-                    <span className="text-sm text-muted-foreground">
-                      Verified
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Additional Credentials */}
-          <div className="mt-12 text-center">
-            <div className="inline-flex items-center gap-2 px-6 py-3 bg-surface border border-purple-dark/30 rounded-full">
-              <Award className="text-primary" size={20} />
-              <span className="text-foreground font-medium">
-                Currently pursuing additional certifications in Cloud Computing
-                & DevOps
+            <p className="text-muted-foreground text-sm">
+              Comprehensive program covering frontend and backend
+              technologies, including React, Node.js, Express, MongoDB,
+              and deployment.
+            </p>
+            <div className="flex items-center justify-between pt-2">
+              <span className="text-sm text-muted-foreground">
+                Apna College
               </span>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
+      {/* Java Inheritance & Data Structures Certificate */}
+      <div className="group bg-surface border border-purple-dark/20 rounded-2xl p-6 hover:border-primary/40 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2">
+        <div className="space-y-6">
+          <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-purple-dark/10 to-surface/50 h-48">
+            {/* Image is now wrapped in an <a> tag */}
+            <a href="/java.png" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/java.png"
+                alt="Java Inheritance & Data Structures Certificate"
+                className="w-full h-full object-cover"
+              />
+            </a>
+            <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent"></div>
+          </div>
+          <div className="space-y-3">
+            <h3 className="text-xl font-bold gradient-text">
+              Inheritance & Data Structures in Java
+            </h3>
+            <p className="text-primary/80 font-medium">
+              Java OOP & Core Data Structures
+            </p>
+            <p className="text-muted-foreground text-sm">
+              Learned inheritance, polymorphism, and essential data structures like lists, stacks,
+              queues, and trees through hands-on coding and problem-solving.
+            </p>
+            <div className="flex items-center justify-between pt-2">
+              <span className="text-sm text-muted-foreground">
+                Coursera (with LJIET)
+              </span>
+              <a
+                href="https://www.coursera.org/account/accomplishments/certificate/XXXXX" // <- replace XXXXX with your cert ID
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-primary hover:underline"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Hackathon Certificate */}
+      <div className="group bg-surface border border-purple-dark/20 rounded-2xl p-6 hover:border-primary/40 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2">
+        <div className="space-y-6">
+          <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-purple-dark/10 to-surface/50 h-48">
+            {/* Image is now wrapped in an <a> tag */}
+            <a href="/hacathon.png" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/hacathon.png"
+                alt="HackNU-Thon 6.0 Certificate"
+                className="w-full h-full object-cover"
+              />
+            </a>
+            <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent"></div>
+          </div>
+          <div className="space-y-3">
+            <h3 className="text-xl font-bold gradient-text">
+              HackNU-Thon 6.0
+            </h3>
+            <p className="text-primary/80 font-medium">
+              Petpooja Track – Innovation & Problem Solving
+            </p>
+            <p className="text-muted-foreground text-sm">
+              Participated in HackNU-Thon 6.0 (Petpooja track) at Nirma University,
+              showcasing innovation, teamwork, and problem-solving skills to develop impactful solutions.
+            </p>
+            <div className="flex items-center justify-between pt-2">
+              <span className="text-sm text-muted-foreground">
+                Nirma University (CSI)
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+      {/* Main Projects Section */}
       {/* Main Projects Section */}
       <section
         id="projects"
@@ -558,7 +578,8 @@ export default function Index() {
             {mainProjects.map((project, index) => (
               <div
                 key={project.title}
-                className="group relative bg-gradient-to-br from-surface via-surface/90 to-surface/80 rounded-3xl p-8 lg:p-12 border border-purple-dark/20 hover:border-primary/50 transition-all duration-700 hover:shadow-2xl hover:shadow-primary/15 hover:-translate-y-3"
+                // CHANGED HERE: Replaced border-purple-dark/20 with border-zinc-800
+                className="group relative bg-gradient-to-br from-surface via-surface/90 to-surface/80 rounded-3xl p-8 lg:p-12 border border-zinc-800 hover:border-primary/50 transition-all duration-700 hover:shadow-2xl hover:shadow-primary/15 hover:-translate-y-3"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 {/* Animated Background Gradient */}
@@ -570,7 +591,8 @@ export default function Index() {
                 <div className="relative z-10 grid lg:grid-cols-5 gap-8 lg:gap-12 items-center">
                   {/* Project Image & Info */}
                   <div className="lg:col-span-2 space-y-6">
-                    <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-purple-dark/20 to-surface h-64 lg:h-72 group-hover:scale-105 transition-transform duration-700 shadow-lg">
+                    {/* CHANGED HERE: Removed gradient from-purple-dark/20 and used a solid bg-zinc-900 */}
+                    <div className="relative overflow-hidden rounded-2xl bg-zinc-900 h-64 lg:h-72 group-hover:scale-105 transition-transform duration-700 shadow-lg">
                       <img
                         src={project.image}
                         alt={project.title}
@@ -578,11 +600,8 @@ export default function Index() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
 
-                      {/* Project Icon */}
-                      <div className="absolute top-6 left-6 w-16 h-16 bg-primary/90 backdrop-blur-sm rounded-2xl flex items-center justify-center text-2xl group-hover:rotate-12 transition-transform duration-500">
-                        {project.icon}
-                      </div>
-
+                    
+                      
                       {/* Status Badge */}
                       <div className="absolute top-6 right-6">
                         <span
@@ -635,7 +654,8 @@ export default function Index() {
                         {project.tech.map((tech) => (
                           <div
                             key={tech}
-                            className="group/tech bg-surface/50 border border-purple-dark/30 rounded-xl p-3 hover:bg-primary/10 hover:border-primary/50 hover:scale-105 transition-all duration-300"
+                            // CHANGED HERE: Replaced border-purple-dark/30 with border-zinc-800
+                            className="group/tech bg-surface/50 border border-zinc-800 rounded-xl p-3 hover:bg-primary/10 hover:border-primary/50 hover:scale-105 transition-all duration-300"
                           >
                             <span className="text-sm font-medium text-foreground group-hover/tech:text-primary transition-colors">
                               {tech}
@@ -649,6 +669,8 @@ export default function Index() {
                     <div className="flex flex-wrap gap-4 pt-4">
                       <a
                         href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary via-primary to-accent text-primary-foreground rounded-2xl font-bold hover:scale-105 hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 group/btn"
                       >
                         <Eye
@@ -785,6 +807,8 @@ export default function Index() {
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <a
                 href="mailto:mauryadoshi1@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="glass-effect rounded-2xl p-6 text-center hover:scale-105 transition-transform duration-300 group"
               >
                 <Mail
@@ -831,6 +855,8 @@ export default function Index() {
               </p>
               <a
                 href="mailto:mauryadoshi1@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-full font-semibold hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl"
               >
                 <Mail size={20} />
@@ -846,7 +872,9 @@ export default function Index() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center">
             <p className="text-muted-foreground">
-              Designed and built by Maurya Doshi 2025 all rights reserved
+              Designed and built by Maurya Doshi
+              <br />
+              2025  @all rights reserved.
             </p>
           </div>
         </div>

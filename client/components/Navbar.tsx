@@ -52,9 +52,7 @@ export default function Navbar() {
           <a
             href="#home"
             className="text-2xl font-bold gradient-text hover:scale-105 transition-transform duration-300"
-          >
-            Maurya Doshi
-          </a>
+          >  &lt;/Maurya&gt;</a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
