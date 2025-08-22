@@ -41,10 +41,10 @@ export default function Index() {
   }, []);
 
   const skills = {
-    frontend: ['React.js', 'JavaScript', 'HTML', 'CSS', 'TypeScript'],
-    backend: ['Node.js', 'Express.js', 'Python', 'Django'],
-    database: ['MongoDB', 'MySQL', 'PostgreSQL', 'phpMyAdmin'],
-    tools: ['GitHub', 'JWT Authentication', 'Tailwind CSS', 'ShadCN/UI', 'Framer Motion']
+    programmingLanguages: ['Python', 'Java', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'C++'],
+    frameworksAndLibraries: ['React', 'Node.js', 'Express', 'Django', 'jQuery', 'Nextjs', 'TensorFlow', 'Flask'],
+    toolsAndTechnologies: ['Git', 'GitHub', 'VS Code', 'Vercel', 'Firebase', 'Jupyter Notebook', 'Anaconda'],
+    otherSkills: ['Problem Solving', 'Data Structures', 'Algorithms', 'UI/UX', 'Responsive Design', 'REST APIs']
   };
 
   const projects = [
