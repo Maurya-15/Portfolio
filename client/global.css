@@ -92,7 +92,7 @@
   }
 
   .project-card {
-    @apply group relative overflow-hidden rounded-xl bg-card border border-border/50 transition-all duration-300 hover:scale-105 hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/10;
+    @apply relative overflow-hidden rounded-xl bg-card border border-border/50 transition-all duration-300 hover:scale-105 hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/10;
   }
 
   .skill-pill {
