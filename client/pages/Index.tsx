@@ -129,11 +129,13 @@ export default function Index() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <a 
-              href="#projects"
-              className="px-8 py-3 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-full font-semibold hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl"
+            <a
+              href="https://cdn.builder.io/o/assets%2F6302eed1ff854c46b4222e42af8b3ed4%2F8880045b83d84214bbed1f5e9de498bc?alt=media&token=27664d51-b78f-4fa8-a743-96258a0cb284&apiKey=6302eed1ff854c46b4222e42af8b3ed4"
+              download="Maurya_Doshi_Resume.pdf"
+              className="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-primary to-accent text-primary-foreground rounded-full font-semibold hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl"
             >
-              View My Work
+              <Download size={20} />
+              Download Resume
             </a>
             <a 
               href="#contact"
