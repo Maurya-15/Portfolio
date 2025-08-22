@@ -686,7 +686,7 @@ export default function Index() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center">
             <p className="text-muted-foreground">
-              © 2024 Maurya Doshi. Built with ❤️ using React & TypeScript
+              Designed and built by Maurya Doshi 2025 all rights reserved
             </p>
           </div>
         </div>
