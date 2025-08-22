@@ -98,7 +98,7 @@
   }
 
   .skill-pill {
-    @apply px-4 py-2 rounded-full bg-secondary text-secondary-foreground border border-border/30 transition-all duration-300 hover:bg-primary/10 hover:border-primary/50 hover:scale-105;
+    @apply px-4 py-2 rounded-full bg-surface text-foreground border border-border/30 transition-all duration-300 hover:bg-primary/20 hover:border-primary/50 hover:scale-105;
   }
 
   .nav-blur {
